@@ -1,12 +1,11 @@
 from django.contrib import admin
-from .models import Page
+from .models import Page, Section
 
 # Register your models here.
 
-
 class PageAdmin(admin.ModelAdmin):
     fieldsets = [
-        (None, {'fields': ['title']}),
+        (None, {'fields': ['title', 'published', 'section']}),
         ('Details', {'fields': ['body', 'pub_date']})
     ]
     list_display = ('title', 'pub_date')
@@ -15,3 +14,4 @@ class PageAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Page, PageAdmin)
+admin.site.register(Section)
