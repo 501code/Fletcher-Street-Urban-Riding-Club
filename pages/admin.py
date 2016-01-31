@@ -13,6 +13,22 @@ class PageAdmin(admin.ModelAdmin):
     list_filter = ['pub_date']
     search_fields = ['title', 'body']
 
-
 admin.site.register(Page, PageAdmin)
-admin.site.register(Section)
+
+
+class SectionAdmin(admin.ModelAdmin):
+    fields = ['title', 'description']
+
+    def has_add_permission(self, request):
+        return False
+
+    def get_actions(self, request):
+        # Disable delete
+        actions = super(SectionAdmin, self).get_actions(request)
+        del actions['delete_selected']
+        return actions
+
+    def has_delete_permission(self, request, obj=None):
+        # Disable delete
+        return False
+admin.site.register(Section, SectionAdmin)

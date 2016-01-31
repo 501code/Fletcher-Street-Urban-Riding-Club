@@ -1,0 +1,34 @@
+[
+  {
+    "model": "pages.section",
+    "pk": 1,
+    "fields": {
+      "title": "About",
+      "description": "Lorem ipsum dolor sit amet consectetur."
+    }
+  },
+  {
+    "model": "pages.section",
+    "pk": 2,
+    "fields": {
+      "title": "Portfolio",
+      "description": "Lorem ipsum dolor sit amet consectetur."
+    }
+  },
+  {
+    "model": "pages.section",
+    "pk": 3,
+    "fields": {
+      "title": "Services",
+      "description": "Lorem ipsum dolor sit amet consectetur."
+    }
+  },
+  {
+    "model": "pages.section",
+    "pk": 4,
+    "fields": {
+      "title": "Team",
+      "description": "Lorem ipsum dolor sit amet consectetur."
+    }
+  }
+]
