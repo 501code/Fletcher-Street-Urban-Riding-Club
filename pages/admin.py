@@ -18,6 +18,7 @@ admin.site.register(Page, PageAdmin)
 
 class SectionAdmin(admin.ModelAdmin):
     fields = ['title', 'description']
+    list_display = ['title', 'description']
 
     def has_add_permission(self, request):
         return False

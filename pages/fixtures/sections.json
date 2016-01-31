@@ -4,6 +4,7 @@
     "pk": 1,
     "fields": {
       "title": "About",
+      "key": "about",
       "description": "Lorem ipsum dolor sit amet consectetur."
     }
   },
@@ -12,6 +13,7 @@
     "pk": 2,
     "fields": {
       "title": "Portfolio",
+      "key": "portfolio",
       "description": "Lorem ipsum dolor sit amet consectetur."
     }
   },
@@ -20,6 +22,7 @@
     "pk": 3,
     "fields": {
       "title": "Services",
+      "key": "services",
       "description": "Lorem ipsum dolor sit amet consectetur."
     }
   },
@@ -28,6 +31,7 @@
     "pk": 4,
     "fields": {
       "title": "Team",
+      "key": "team",
       "description": "Lorem ipsum dolor sit amet consectetur."
     }
   }

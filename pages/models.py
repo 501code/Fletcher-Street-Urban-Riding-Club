@@ -7,6 +7,7 @@ from django.utils import timezone
 class Section(models.Model):
     title = models.CharField('Section Title', max_length=300)
     description = models.CharField('Description', max_length=400)
+    key = models.CharField(max_length=50)
     pub_date = models.DateTimeField('Date Published', default=timezone.now)
     visible = models.BooleanField('Visible', default=True)
 
