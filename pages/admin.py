@@ -3,6 +3,7 @@ from .models import Page, Section
 
 # Register your models here.
 
+
 class PageAdmin(admin.ModelAdmin):
     fieldsets = [
         (None, {'fields': ['title', 'published', 'section']}),

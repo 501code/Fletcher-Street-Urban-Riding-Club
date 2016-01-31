@@ -1,0 +1,20 @@
+[
+  {
+    "model": "site_details.sitedetail",
+    "pk": 1,
+    "fields": {
+      "key": "site_title",
+      "label": "Title",
+      "value": "Your Site Title"
+    }
+  },
+  {
+    "model": "site_details.sitedetail",
+    "pk": 2,
+    "fields": {
+      "key": "site_slogan",
+      "label": "Slogan",
+      "value": "An Awesome Slogan"
+    }
+  }
+]

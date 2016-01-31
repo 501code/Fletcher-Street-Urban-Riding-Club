@@ -3,6 +3,7 @@ from __future__ import unicode_literals
 from django.db import models
 from datetime import datetime
 
+
 class Section(models.Model):
     title = models.CharField('Section Title', max_length=300)
     description = models.CharField('Description', max_length=400)
