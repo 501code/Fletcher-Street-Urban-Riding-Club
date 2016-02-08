@@ -1,6 +1,9 @@
 <form name="sentMessage" id="contactForm" novalidate>
     {% csrf_token %}
     <div class="row">
+        <div class="col-lg-12 text-center">
+            {{ form.non_field_errors }}
+        </div>
         <div class="col-md-6">
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
