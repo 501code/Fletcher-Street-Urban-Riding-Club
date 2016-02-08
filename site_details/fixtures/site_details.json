@@ -16,5 +16,14 @@
       "label": "Slogan",
       "value": "An Awesome Slogan"
     }
+  },
+  {
+    "model": "site_details.sitedetail",
+    "pk": 3,
+    "fields": {
+      "key": "site_email",
+      "label": "Contact Email",
+      "value": "info@501code.org"
+    }
   }
 ]
