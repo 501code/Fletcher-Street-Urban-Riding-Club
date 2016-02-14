@@ -12,3 +12,6 @@ class SiteDetail(models.Model):
 
     def __str__(self):
         return self.label
+
+    def __unicode__(self):
+        return unicode(self.value)
