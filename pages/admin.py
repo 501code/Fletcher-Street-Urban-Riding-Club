@@ -9,7 +9,7 @@ class PageAdmin(admin.ModelAdmin):
         (None, {'fields': ['title', 'published', 'section']}),
         ('Details', {'fields': ['body', 'pub_date']})
     ]
-    list_display = ('title', 'pub_date')
+    list_display = ('title', 'pub_date', 'section')
     list_filter = ['pub_date']
     search_fields = ['title', 'body']
 
@@ -17,8 +17,8 @@ admin.site.register(Page, PageAdmin)
 
 
 class SectionAdmin(admin.ModelAdmin):
-    fields = ['title', 'description', 'visible']
-    list_display = ['title', 'description', 'visible']
+    fields = ['title', 'description', 'visible', 'order']
+    list_display = ['title', 'description', 'visible', 'order']
 
     def has_add_permission(self, request):
         return False

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Agency - Start Bootstrap Theme</title>
+    <title>{{ title }} - {{ slogan }}</title>
 
     {% load staticfiles %}
     <!-- Bootstrap Core CSS -->
@@ -48,7 +48,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top"><i class="fa fa-home"></i></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -57,18 +57,14 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#team">Team</a>
-                    </li>
+                    {% if sections|length > 0 %}
+                        {% for section in sections%}
+                            <li>
+                                <a class="page-scroll" href="#{{ section.key }}">{{ section.title }}</a>
+                            </li>
+                        {% endfor %}
+                    {% endif %}
+
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
@@ -83,9 +79,9 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Our Studio!</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+                <div class="intro-lead-in">{{ title }}</div>
+                <div class="intro-heading">{{ slogan }}</div>
+                <a href="#services" class="page-scroll btn btn-xl">Learn More</a>
             </div>
         </div>
     </header>

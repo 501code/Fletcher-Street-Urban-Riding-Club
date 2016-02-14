@@ -12,8 +12,8 @@
     "model": "pages.section",
     "pk": 2,
     "fields": {
-      "title": "Portfolio",
-      "key": "portfolio",
+      "title": "Gallery",
+      "key": "gallery",
       "description": "Lorem ipsum dolor sit amet consectetur."
     }
   },
@@ -21,8 +21,8 @@
     "model": "pages.section",
     "pk": 3,
     "fields": {
-      "title": "Services",
-      "key": "services",
+      "title": "Intro",
+      "key": "intro",
       "description": "Lorem ipsum dolor sit amet consectetur."
     }
   },
@@ -30,8 +30,8 @@
     "model": "pages.section",
     "pk": 4,
     "fields": {
-      "title": "Team",
-      "key": "team",
+      "title": "Partners",
+      "key": "partners",
       "description": "Lorem ipsum dolor sit amet consectetur."
     }
   }
