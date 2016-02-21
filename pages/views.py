@@ -19,10 +19,10 @@ def index(request):
 
 def get_pages(sections):
 
-    values = {} # initialize dictionary to store pages
+    values = {}
     for this_section in sections:
         section_pages = Page.objects.all().filter(section=this_section)
         if section_pages:
-            values[this_section.key]['pages'] = section_pages
+            values[this_section.key] = {'section': this_section, 'content': section_pages}
 
     return values
