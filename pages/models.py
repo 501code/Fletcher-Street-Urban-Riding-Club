@@ -22,7 +22,7 @@ class Page(models.Model):
     published = models.BooleanField('Published', default=True)
     pub_date = models.DateTimeField('Date Published', default=timezone.now)
     section = models.ForeignKey(Section, on_delete=models.CASCADE)
-    image = models.ImageField(upload_to='pages/media/', default='none.jpg')
+    image = models.ImageField(upload_to='uploads/', default='none.jpg')
 
     def __str__(self):
         return self.title
