@@ -6,7 +6,7 @@ from .models import Page, Section
 
 class PageAdmin(admin.ModelAdmin):
     fieldsets = [
-        (None, {'fields': ['title', 'published', 'section']}),
+        (None, {'fields': ['title', 'published', 'section', 'image']}),
         ('Details', {'fields': ['body', 'pub_date']})
     ]
     list_display = ('title', 'pub_date', 'section')
